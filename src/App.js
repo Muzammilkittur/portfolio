@@ -1,8 +1,8 @@
 import './App.css';
-import Home from './home';
-import BasicButtons from './buttons';
+import Home from './components/home';
+import BasicButtons from './components/buttons';
 import PrimarySearchAppBar from './navbar';
-import RecipeReviewCard from './card';
+import RecipeReviewCard from './components/card';
 
 
 

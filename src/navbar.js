@@ -15,6 +15,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import logo from './components/images/logo.png';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -156,7 +157,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="fixed" sx={{ backgroundColor: '#84AE92' }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -173,7 +174,8 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            Muzammil
+         <img src={logo} alt="Logo" style={{ maxHeight: '50px', height: 'auto', width: 'auto', objectFit: 'contain' }}
+/>
           </Typography>
           <Search>
             <SearchIconWrapper>

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import PrimarySearchAppBar from './navbar'; // if you have one
 import RecipeReviewCard from './components/card'
 import { fetchCards } from './services/cardService';
+import { Toolbar } from '@mui/material';
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -18,8 +19,9 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: '#B9D4AA', minHeight: '100vh' }}>
       <PrimarySearchAppBar />
+      <Toolbar/>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         {cards.map((card) => (
           <RecipeReviewCard
